@@ -1,0 +1,9 @@
+[Unit]
+Description=System backup every week on Sunday at 4:00 AM
+
+[Timer]
+OnCalendar=Sun 04:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=System Backup Process
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/system-backup.sh
+User=root
+Group=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
