@@ -5,7 +5,7 @@ This service performs a schedule system backup using `rsync` and sends Telegram 
 
 ## :gear: Setup
 
-:warning: **Warning**: before you proceed, make sure your Linux OS uses `systemd` as a service manager.
+:warning: **Warning**: before you proceed, make sure your Linux OS uses `systemd` as a service manager and you have `rsync` installed in your system.
 
 Open terminal, change your current working directory to the location where you want the cloned directory and then clone this repository to your local machine
 

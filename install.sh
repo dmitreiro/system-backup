@@ -12,6 +12,12 @@ if ! command -v systemctl &> /dev/null; then
     exit 1
 fi
 
+# ensure rsync is available
+if ! command -v rsync &> /dev/null; then
+    echo "Error: rsync is not available on this system."
+    exit 1
+fi
+
 echo "Starting system-backup installation..."
 
 # creating configuration file
